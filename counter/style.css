@@ -1,0 +1,32 @@
+/*universal*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1 {
+  font-size: 5rem;
+  color: rgb(14, 183, 183);
+  margin-bottom: 40px;
+}
+h2 {
+  font-size: 4rem;
+}
+.btns {
+  margin-top: 40px;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 14px 18px;
+  color: #222;
+  background-color: rgb(14, 183, 183);
+}
