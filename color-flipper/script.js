@@ -23,7 +23,7 @@ btn.addEventListener('click', function () {
   color.textContent = hexCode;
 });
 
-// for generateing random number
+// for generating random number
 
 function generateRandom() {
   return Math.floor(Math.random() * hexColors.length);
