@@ -1,7 +1,6 @@
 'use strict';
 const colors = ['green', 'red', 'rgba(133,122,200)', '#f15025'];
-const container = document.getElementById('container');
-const heading = document.querySelector('.heading');
+
 const color = document.querySelector('.color');
 const btn = document.querySelector('.btn');
 

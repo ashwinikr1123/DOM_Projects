@@ -16,15 +16,7 @@ nav {
   gap: 100px;
   height: 70px;
 }
-a {
-  color: #222;
-  text-decoration: none;
-  padding: 15px 18px;
-}
-.nav-links {
-  list-style: none;
-  display: flex;
-}
+
 .container {
   height: calc(100vh - 70px);
   display: flex;
@@ -36,9 +28,15 @@ h2 {
   font-size: 3.1rem;
   padding: 20px;
 }
+a {
+  color: #222;
+  text-decoration: none;
+}
 .btn {
   border: none;
+  background-color: #fff;
   font-size: 1.4rem;
   padding: 15px 32px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
