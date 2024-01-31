@@ -47,8 +47,9 @@ const names = document.querySelector('.names');
 const title = document.querySelector('.title');
 const text = document.querySelector('.text');
 const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
 
+const nextBtn = document.querySelector('.next-btn');
+const surpriseBtn = document.querySelector('.surprise-btn');
 let currentIndex = 0;
 
 function changeValue(cardNum) {
@@ -60,7 +61,7 @@ function changeValue(cardNum) {
 }
 // at the time of window load
 window.addEventListener('DOMContentLoaded', function () {
-  changeValue();
+  changeValue(currentIndex);
 });
 
 // previous button
@@ -78,4 +79,11 @@ nextBtn.addEventListener('click', function () {
     currentIndex = 0;
   }
   changeValue(currentIndex);
+});
+
+//surprise Button
+surpriseBtn.addEventListener('click', function () {
+  // Math.random();
+  let randomNum = Math.floor(Math.random() * reviews.length);
+  changeValue(randomNum);
 });
