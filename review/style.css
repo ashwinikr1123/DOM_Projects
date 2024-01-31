@@ -4,3 +4,138 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*
+    font-family: "Open Sans", sans-serif;
+    wt(300-800)
+    font-family: "Urbanist", sans-serif;
+    wt (100-900)
+    heading color: # 102a42
+*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f1f5f8;
+}
+i {
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #40a0fa;
+  margin: 10px 0;
+}
+/*main*/
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  color: #102a42;
+}
+/*h1*/
+.heading-area {
+  margin-bottom: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  font-size: 2.5rem;
+  padding-bottom: 15px;
+}
+ul {
+  width: 100px;
+  height: 3px;
+  display: flex;
+  background-color: #40a0fa;
+  flex-direction: row;
+}
+
+/*card*/
+.card {
+  /* border: 1px solid green; */
+  padding: 20px;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+.image {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 8px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/*description*/
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*h2*/
+.name {
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+}
+/*h3*/
+.title {
+  color: #40a0fa;
+  text-transform: uppercase;
+}
+.text {
+  font-weight: 200;
+  color: #444;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.btns {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 7px;
+}
+.surprise-btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-color: #40a0fa;
+  border-radius: 20px;
+  padding: 15px 18px;
+  background: #fff;
+  color: #40a0fa;
+}
+.surprise-btn:hover {
+  color: #fff;
+  background-color: #40a0fa;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 590px) {
+  .card {
+    width: 80vw;
+    padding: 20px 0;
+  }
+  .text {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .btns {
+    gap: 15px;
+  }
+}
