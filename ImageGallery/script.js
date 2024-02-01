@@ -52,11 +52,24 @@ const gallery = [
     desc: 'Lorem ipsum dolor sit amet.',
   },
 ];
-const frame = document.querySelector('.frame');
+
 const gridGallery = document.querySelector('.grid-gallery');
 
 // on load
-
+// window.addEventListener('DOMContentLoaded', function () {
+//   let displayGallery = gallery.map(function (items) {
+//     return `<div class="frame">
+//     <img
+//   src=${items.picture}
+//   alt="img"
+//   class="image"
+// />
+// <h3 class="sub-heading">${items.desc}</h3>
+// </div>`;
+//   });
+//   displayGallery = displayGallery.join('');
+//   gridGallery.innerHTML = displayGallery;
+// });
 window.addEventListener('DOMContentLoaded', function () {
   displayGallery(gallery);
 });
@@ -64,13 +77,13 @@ window.addEventListener('DOMContentLoaded', function () {
 function displayGallery(galleryImageNum) {
   let displayImage = galleryImageNum.map((items) => {
     return ` <div class="frame">
-    <img
-      src=${items.picture}
-      alt="img"
-      class="image"
-    />
-    <h3 class="sub-heading">${items.desc}</h3>
-  </div>`;
+      <img
+        src=${items.picture}
+        alt="img"
+        class="image"
+      />
+      <h3 class="sub-heading">${items.desc}</h3>
+    </div>`;
   });
   displayImage = displayImage.join('');
   //   console.log(displayImage);
